@@ -1,0 +1,127 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Use border-box model for all elements */
+}
+
+html {
+  font-size: 100%; /* Default size for the document font */
+}
+
+body {
+  line-height: 1.5; /* Better readability */
+  font-family: Arial, sans-serif; /* Set a default font */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; /* Remove margin for headings */
+}
+
+button {
+  cursor: pointer; /* Change cursor for buttons */
+}
+
+/* Application General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #35424a;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 56px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  color: white;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+h2 {
+  padding-bottom: 5px;
+  color: #02a0dacc;
+  border-bottom: 2px solid #02a0dacc;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #02a0dacc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+  align-self: center;
+}
+
+button:hover {
+  background: #01b8fb;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+}
+
+.comment {
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 95%;
+  }
+}
