@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Output Encoding Demo</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Protecting Web Applications with Output Encoding</h1>
+        <p>A Mock Blog Highlighting Insecure Input Fields</p>
+      </header>
+      <div class="container">
+        <h2>Mock Blog Posts</h2>
+        <div class="blog-post">
+          <h3>The Rise of Cybersecurity Threats</h3>
+          <p>
+            In today's digital age, cybersecurity threats are becoming more
+            sophisticated. It's essential for both individuals and businesses to
+            stay informed about the latest security vulnerabilities, such as
+            Cross-Site Scripting (XSS).
+          </p>
+        </div>
+        <div class="blog-post">
+          <h3>Understanding XSS Vulnerabilities</h3>
+          <p>
+            Cross-Site Scripting (XSS) is a type of security vulnerability that
+            allows attackers to inject malicious scripts into web pages viewed
+            by other users. This can lead to data theft, session hijacking, and
+            other harmful consequences.
+          </p>
+        </div>
+        <div class="blog-post">
+          <h3>Best Practices for Secure Coding</h3>
+          <p>
+            Developers must implement secure coding practices to mitigate XSS
+            attacks. This includes sanitizing user input and using appropriate
+            output encoding methods to prevent malicious script execution.
+          </p>
+        </div>
+        <h2>Leave a Comment</h2>
+        <form id="commentForm" onsubmit="return false;">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="comment">Comment:</label>
+          <textarea id="comment" rows="5" required></textarea>
+
+          <button type="button" onclick="submitComment()">Submit</button>
+        </form>
+        <h2>Comments</h2>
+        <div id="comments"></div>
+      </div>
+    </main>
+  </body>
+</html>
