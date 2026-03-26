@@ -27,3 +27,20 @@ function submitComment() {
   // Clear the form
   document.getElementById("commentForm").reset();
 }
+
+function submitCommentSafe() {
+  const name = document.getElementById("name");
+  const comment = document.getElementById("comment");
+
+  const newComment = document.createElement("div");
+  newComment.className = "comment";
+
+  const strong = document.createElement("strong");
+  strong.textContent = name.value + ":";
+  newComment.appendChild(strong);
+  newComment.append(" " + comment.value);
+
+  document.getElementById("comments").appendChild(newComment);
+
+  document.getElementById("commentForm").reset();
+}
