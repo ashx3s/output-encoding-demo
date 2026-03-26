@@ -5,7 +5,6 @@ This demo explores ways to protect a web application with output encoding.
 ## Tasks
 
 - Write function that encodes user input before displaying it in the comment section
--
 
 ## Hack Test Code
 
