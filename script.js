@@ -1,12 +1,12 @@
-function encodeInput(el) {
+function encodeInput(input) {
   const map = {
     "&": "&amp;",
     "<": "&lt;",
     ">": "&gt;",
     '"': "&quot;",
-    "'": "&#39;",
+    "'": "&#38;",
   };
-  return text.replace(/[&<>”‘]/g, function (m) {
+  return input.replace(/[&<>”‘]/g, function (m) {
     return map[m];
   });
 }
@@ -21,7 +21,7 @@ function submitComment() {
   newComment.className = "comment";
 
   // Insert user input into the comment
-  newComment.innerHTML = `<strong>${name.value}:</strong> ${comment.value}`;
+  newComment.innerHTML = `<strong>${encodeInput(name.value)}:</strong> ${encodeInput(comment.value)}`;
   document.getElementById("comments").appendChild(newComment);
 
   // Clear the form

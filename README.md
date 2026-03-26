@@ -35,5 +35,3 @@ document.createTextNode(dangerVariable);
 document.createElement(dangerVariable);
 elem.innerHTML = DOMPurify.sanitize(dangerVar);
 ```
-
-### Patterns to avoid
