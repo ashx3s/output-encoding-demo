@@ -55,7 +55,6 @@ function submitCommentSanitized() {
   newComment.className = "comment";
 
   // setHTML parses the input as HTML but strips anything dangerous
-  // <strong>, <em>, <a> etc. survive — <script>, onerror, onclick do not
   newComment.setHTML(`<strong>${name.value}:</strong> ${comment.value}`);
 
   document.getElementById("comments").appendChild(newComment);
