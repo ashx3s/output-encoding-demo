@@ -22,6 +22,8 @@ This demo explores ways to protect a web application with output encoding.
 - [Cross-Site Scripting Explained](https://www.youtube.com/watch?v=EoaDgUgS6QA)
 - [AppSec 101 Output Encoding](https://qwiet.ai/appsec-101-output-encoding/)
 - [XSS Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+- [Dom.purify](https://www.npmjs.com/package/dompurify)
+- [The very new setHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/setHTML)
 
 ### Code Examples
 

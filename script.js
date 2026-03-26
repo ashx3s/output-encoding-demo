@@ -44,3 +44,21 @@ function submitCommentSafe() {
 
   document.getElementById("commentForm").reset();
 }
+
+// very new and not fully supported setHTML approach
+
+function submitCommentSanitized() {
+  const name = document.getElementById("name");
+  const comment = document.getElementById("comment");
+
+  const newComment = document.createElement("div");
+  newComment.className = "comment";
+
+  // setHTML parses the input as HTML but strips anything dangerous
+  // <strong>, <em>, <a> etc. survive — <script>, onerror, onclick do not
+  newComment.setHTML(`<strong>${name.value}:</strong> ${comment.value}`);
+
+  document.getElementById("comments").appendChild(newComment);
+
+  document.getElementById("commentForm").reset();
+}
